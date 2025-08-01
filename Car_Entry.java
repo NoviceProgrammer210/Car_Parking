@@ -215,7 +215,7 @@ public class Car_Entry {
                 slotValueLabel.setText(String.valueOf(slot));
 
                 long hours = Duration.between(ve.entryHour, exitTime).toHours();
-                if (hours <= 0) hours = 1; // Minimum 1 hour billing
+                if (hours <= 0) hours = 1; 
 
                 int rate = getRate(ve.vehicleType);
                 long total = rate * hours;
